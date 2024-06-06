@@ -1,4 +1,4 @@
-import 'package:doc_app/core/helpers/extentions.dart';
+import 'package:doc_app/core/helpers/extensions.dart';
 import 'package:doc_app/core/routing/routes.dart';
 import 'package:doc_app/core/theming/colors.dart';
 import 'package:doc_app/core/theming/styles.dart';
@@ -35,7 +35,7 @@ class GetStartedButton extends StatelessWidget {
       ),
       child: Text(
         "Get Started",
-        style: TextStyles.font16whiteSemiBold,
+        style: TextStyles.font16whiteMedium,
       ),
     );
   }
