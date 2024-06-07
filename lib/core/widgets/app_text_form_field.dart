@@ -37,6 +37,9 @@ class AppTextFormField extends StatelessWidget {
       controller: controller,
       obscureText: isObscureText ?? false,
       style: TextStyles.font14darkBlueMedium,
+      onTapOutside: (evt){
+        FocusManager.instance.primaryFocus?.unfocus();
+      },
       validator: (value) {
         return validator(value);
       },
