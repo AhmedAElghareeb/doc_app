@@ -4,6 +4,18 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class AppTextFormField extends StatelessWidget {
+  final EdgeInsetsGeometry? contentPadding;
+  final InputBorder? focusedBorder;
+  final InputBorder? enabledBorder;
+  final TextStyle? inputTextStyle;
+  final TextStyle? hintStyle;
+  final String hintText;
+  final bool? isObscureText;
+  final Widget? suffixIcon;
+  final Color? backGroundColor;
+  final TextEditingController? controller;
+  final Function(String?) validator;
+
   const AppTextFormField({
     super.key,
     this.contentPadding,
@@ -15,26 +27,19 @@ class AppTextFormField extends StatelessWidget {
     this.isObscureText,
     this.suffixIcon,
     this.backGroundColor,
+    this.controller,
+    required this.validator,
   });
-
-  final EdgeInsetsGeometry? contentPadding;
-  final InputBorder? focusedBorder;
-  final InputBorder? enabledBorder;
-  final TextStyle? inputTextStyle;
-  final TextStyle? hintStyle;
-  final String hintText;
-  final bool? isObscureText;
-  final Widget? suffixIcon;
-  final Color? backGroundColor;
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
-      // onTapOutside: (event) {
-      //   FocusManager.instance.primaryFocus?.unfocus();
-      // },
+      controller: controller,
       obscureText: isObscureText ?? false,
       style: TextStyles.font14darkBlueMedium,
+      validator: (value) {
+        return validator(value);
+      },
       decoration: InputDecoration(
         isDense: true,
         contentPadding: contentPadding ??
@@ -51,6 +56,14 @@ class AppTextFormField extends StatelessWidget {
                   color: ColorsManager.lighterGrey, width: 1.3),
               borderRadius: BorderRadius.circular(16),
             ),
+        errorBorder: OutlineInputBorder(
+          borderSide: const BorderSide(color: Colors.red, width: 1.3),
+          borderRadius: BorderRadius.circular(16),
+        ),
+        focusedErrorBorder: OutlineInputBorder(
+          borderSide: const BorderSide(color: Colors.red, width: 1.3),
+          borderRadius: BorderRadius.circular(16),
+        ),
         hintStyle: hintStyle ?? TextStyles.font14lightGreyRegular,
         hintText: hintText,
         suffixIcon: suffixIcon,

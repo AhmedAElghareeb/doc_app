@@ -2,8 +2,8 @@ import 'package:doc_app/core/theming/styles.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
-class DontHaveAccount extends StatelessWidget {
-  const DontHaveAccount({super.key});
+class AlreadyHaveAccountText extends StatelessWidget {
+  const AlreadyHaveAccountText({super.key});
 
   @override
   Widget build(BuildContext context) {
