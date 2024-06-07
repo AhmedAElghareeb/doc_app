@@ -12,6 +12,13 @@ ________________________________________________________________________________
 # ▶️ On Boarding 
 ![onboarding](https://github.com/AhmedAElghareeb/doc_app/assets/112869283/7dd88fbc-d43d-4af1-bada-97fa03d177a6)
 
-# ▶️ Login
+# ▶️ Login ui
 ![login_ui](https://github.com/AhmedAElghareeb/doc_app/assets/112869283/55a068c1-4630-46fd-b137-741b6b16f599)
+
+# ▶️ Login validations 
+![validation](https://github.com/AhmedAElghareeb/doc_app/assets/112869283/fc6cb6d0-5e45-4328-8674-91c4cc2ca572)
+
+# ▶️ Login error request state 
+
+![request_error_state](https://github.com/AhmedAElghareeb/doc_app/assets/112869283/242f5a7e-eeb9-4c16-82e9-1e11a112b979)
 
