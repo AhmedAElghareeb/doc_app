@@ -31,7 +31,7 @@ class _SocialMediaLoginState extends State<SocialMediaLogin> {
             ),
             child: CircleAvatar(
               radius: 23.r,
-              backgroundColor: ColorsManager.socialBgColorAvatar,
+              backgroundColor: ColorsManager.bgColorAvatar,
               child: SvgPicture.asset(
                 "assets/svgs/${paths[index]}",
                 width: 24.w,
