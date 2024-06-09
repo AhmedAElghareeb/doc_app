@@ -19,6 +19,10 @@ ________________________________________________________________________________
 ![validation](https://github.com/AhmedAElghareeb/doc_app/assets/112869283/fc6cb6d0-5e45-4328-8674-91c4cc2ca572)
 
 # ▶️ Login error request state 
-
 ![request_error_state](https://github.com/AhmedAElghareeb/doc_app/assets/112869283/242f5a7e-eeb9-4c16-82e9-1e11a112b979)
 
+# ▶️ SignUp Ui
+![signUp_ui](https://github.com/AhmedAElghareeb/doc_app/assets/112869283/ffad1840-d2c6-4ede-bf75-46b57fa47312)
+
+# ▶️ Home Ui
+![homeUi](https://github.com/AhmedAElghareeb/doc_app/assets/112869283/d3a1e5e4-aaae-4b37-b5ca-de526155a239)
