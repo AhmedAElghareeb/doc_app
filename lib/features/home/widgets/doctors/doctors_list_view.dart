@@ -1,5 +1,5 @@
 import 'package:doc_app/features/home/data/models/specializations_response_model.dart';
-import 'package:doc_app/features/home/widgets/doctors_list_view_item.dart';
+import 'package:doc_app/features/home/widgets/doctors/doctors_list_view_item.dart';
 import 'package:flutter/material.dart';
 
 class DoctorsListView extends StatelessWidget {

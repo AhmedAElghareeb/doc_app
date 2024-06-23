@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 extension Navigation on BuildContext {
@@ -21,4 +20,8 @@ extension Navigation on BuildContext {
 
 extension StringExtension on String? {
   bool isNullOrEmpty() => this == null || this == "";
+}
+
+extension ListExtension<T> on List<T>? {
+  bool isNullOrEmpty() => this == null || this!.isEmpty;
 }
