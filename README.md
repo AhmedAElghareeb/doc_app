@@ -27,4 +27,10 @@ ________________________________________________________________________________
 # ▶️ Home ui
 ![homeUi](https://github.com/AhmedAElghareeb/doc_app/assets/112869283/362fa4ec-fcfd-46ee-80f4-a991b69598f1)
 
+# ▶️ Home Filter Doctors by SpecializationsId
+![1000040193](https://github.com/AhmedAElghareeb/doc_app/assets/112869283/96506b85-373d-48e3-a4aa-b39a8bee0277)
 
+![1000040192](https://github.com/AhmedAElghareeb/doc_app/assets/112869283/c764b396-737f-4919-84d6-0fca23953f1b)
+
+# ▶️ Home Shimmer Loading
+![1000040194](https://github.com/AhmedAElghareeb/doc_app/assets/112869283/49e41810-3b58-4a6e-9ce5-561fa9769cc6)
