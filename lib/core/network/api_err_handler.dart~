@@ -1,0 +1,21 @@
+// TODO: wallahy I will refactor this .. Omar Ahmed
+import 'package:dio/dio.dart';
+import 'package:doc_app/core/network/api_err_model.dart';
+
+class ErrorHandler implements Exception {
+  late ApiErrorModel apiErrorModel;
+
+  ErrorHandler.handle(dynamic error) {
+    if (error is DioException) {
+      // dio error so its an error from response of the API or from dio itself
+      apiErrorModel = _handleError(error);
+    } else {
+      // default error
+      apiErrorModel = DataSource.DEFAULT.getFailure();
+    }
+  }
+}
+
+ApiErrorModel _handleError(DioException error) {
+  
+}

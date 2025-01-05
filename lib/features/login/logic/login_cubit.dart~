@@ -6,6 +6,7 @@ import 'package:doc_app/features/login/data/repos/login_repo.dart';
 import 'package:doc_app/features/login/logic/login_state.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class LoginCubit extends Cubit<LoginState> {
   LoginCubit(this._loginRepo) : super(const LoginState.initial());
@@ -27,6 +28,9 @@ class LoginCubit extends Cubit<LoginState> {
     );
     response.when(
       success: (loginResponse) async {
+        final SharedPreferences prefes = await SharedPreferences.getInstance();
+        await prefes.setString(
+            SharedPrefKeys.userName, loginResponse.userData?.userName ?? "");
         await saveUserToken(loginResponse.userData?.token ?? "");
         emit(
           LoginState.success(loginResponse),
