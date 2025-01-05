@@ -1,5 +1,4 @@
 import 'package:doc_app/core/helpers/extensions.dart';
-import 'package:doc_app/core/network/api_err_model.dart';
 import 'package:doc_app/core/routing/routes.dart';
 import 'package:doc_app/core/theming/colors.dart';
 import 'package:doc_app/core/theming/styles.dart';
@@ -42,7 +41,7 @@ class LoginBlocListener extends StatelessWidget {
     );
   }
 
-  void setUpErrorState(BuildContext context, ApiErrorModel apiErrorModel) {
+  void setUpErrorState(BuildContext context, String error) {
     context.pop();
     showDialog(
       context: context,
@@ -53,12 +52,13 @@ class LoginBlocListener extends StatelessWidget {
           size: 32,
         ),
         content: Text(
-          apiErrorModel.getAllErrorMessages(),
+          error,
           style: TextStyles.font15darkBlueMedium,
         ),
         actions: [
           TextButton(
-            onPressed: () {
+            onPressed: ()
+            {
               context.pop();
             },
             child: Text(
