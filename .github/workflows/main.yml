@@ -28,11 +28,11 @@ jobs:
         run: flutter pub get
 
       - name: Build APK
-        run: flutter build apk --release
+        run: flutter build apk --release --flavor development --target lib/main_development.dart --no-tree-shake-icons
 
 
       - name: Upload APK
         uses: actions/upload-artifact@v3
         with:
           name: release-apk
-          path: build/app/outputs/flutter-apk/app-release.apk
+          path: build/app/outputs/flutter-apk/app-development-release.apk
